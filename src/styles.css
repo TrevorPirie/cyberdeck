@@ -2,9 +2,16 @@
     color: red;
 }
 
-.door-top {
+.door-container {
+    height: 100%;
+    background-color: blue;
+    border-color: yellow;
+}
+
+.door-main {
   background-color: black;
   border-style: solid;
   border-color: red;
   border-width: 2px;
+  height:50%
 }
