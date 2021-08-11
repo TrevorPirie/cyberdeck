@@ -1,0 +1,10 @@
+.title {
+    color: red;
+}
+
+.door-top {
+  background-color: black;
+  border-style: solid;
+  border-color: red;
+  border-width: 2px;
+}
