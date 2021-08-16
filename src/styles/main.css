@@ -1,0 +1,97 @@
+:root {
+  --primary-color: black;
+  --secondary-color: red;
+  --call-to-action-color: yellow;
+  --info-color: antiquewhite;
+}
+
+.background-color-primary {
+  background-color: var(--primary-color);
+}
+
+.background-color-secondary {
+  background-color: var(--secondary-color);
+}
+
+nav {
+  background-color: var(--primary-color);
+  overflow: hidden;
+  padding: 10px;
+}
+
+body {
+  background-color: var(--primary-color);
+  margin: 0px;
+}
+
+.title {
+  color: var(--secondary-color);
+}
+
+.nav-text {
+  color: var(--info-color);
+}
+
+.primary-text {
+  color: var(--secondary-color);
+}
+
+.door-container {
+  /* border-color: var(--secondary-color); */
+  /* border-style: solid; */
+  /* border-width: 4px; */
+  height: 900px;
+}
+
+.door {
+  height: 449px;
+  /* border-style: solid; */
+  /* border-width: 1px; */
+  /* border-color: var(--secondary-color); */
+}
+
+.column {
+  border-style: dotted;
+  border-width: 1px;
+}
+
+.column-left-top {
+  float: left;
+  width: 30%;
+  height: 100%;
+  border-top-color: red;
+  border-top-style: solid;
+  border-left-color: red;
+  border-left-style: solid;
+}
+
+
+.column-middle-top {
+  float: left;
+  width: 69%;
+  height: 100%;
+  border-top-color: red;
+  border-top-style: solid;
+  border-right-color: red;
+  border-right-style: solid;
+}
+
+.column-middle-bottom {
+  float: left;
+  width: 69%;
+  height: 100%;
+  border-bottom-color: red;
+  border-bottom-style: solid;
+  border-left-color: red;
+  border-left-style: solid;
+}
+
+.column-right-bottom {
+  float: left;
+  width: 30%;
+  height: 100%;
+  border-bottom-color: red;
+  border-bottom-style: solid;
+  border-right-color: red;
+  border-right-style: solid;
+}
