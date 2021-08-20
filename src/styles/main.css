@@ -1,8 +1,10 @@
 :root {
-  --primary-color: black;
+  --primary-color: rgb(3, 2, 12);
   --secondary-color: red;
+  --secondary-color-background: rgba(255, 0, 0, 0.249);
   --call-to-action-color: yellow;
   --info-color: antiquewhite;
+  --container-padding: 10px;
 }
 
 .background-color-primary {
@@ -19,9 +21,18 @@ nav {
   padding: 10px;
 }
 
-body {
-  background-color: var(--primary-color);
+* {
   margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 16px;
+  font-stretch: normal;
+  background-color: var(--primary-color);
 }
 
 .title {
@@ -36,62 +47,89 @@ body {
   color: var(--secondary-color);
 }
 
-.door-container {
-  /* border-color: var(--secondary-color); */
-  /* border-style: solid; */
-  /* border-width: 4px; */
-  height: 900px;
-}
-
-.door {
-  height: 449px;
-  /* border-style: solid; */
-  /* border-width: 1px; */
-  /* border-color: var(--secondary-color); */
-}
-
-.column {
-  border-style: dotted;
+.c-border {
+  border-style: solid;
   border-width: 1px;
+  border-color: var(--secondary-color);
 }
 
-.column-left-top {
-  float: left;
-  width: 30%;
-  height: 100%;
-  border-top-color: red;
-  border-top-style: solid;
-  border-left-color: red;
-  border-left-style: solid;
+.container {
+  height: 95vh;
+  padding: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(255, 255, 255, 0.2)
+  );
+  /* url("../assets/images/cyberpunk_background.jpeg"); */
+  background-size: cover;
+  background-position: top;
 }
 
-
-.column-middle-top {
-  float: left;
-  width: 69%;
+.content-container {
   height: 100%;
-  border-top-color: red;
-  border-top-style: solid;
-  border-right-color: red;
-  border-right-style: solid;
+  display: block;
+  margin: 0px;
 }
 
-.column-middle-bottom {
+.column-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   float: left;
-  width: 69%;
+  width: 20%;
+  padding: 2px;
   height: 100%;
-  border-bottom-color: red;
-  border-bottom-style: solid;
-  border-left-color: red;
-  border-left-style: solid;
 }
 
-.column-right-bottom {
-  float: left;
-  width: 30%;
+.column-main {
+  float: right;
+  width: 80%;
   height: 100%;
-  border-bottom-color: red;
-  border-bottom-style: solid;
-  border-right-color: red;
-  border-right-style: solid;
+}
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  background-color: azure;
+}
+
+.button-main {
+  background-color: black;
+  border-color: var(--secondary-color);
+  border-width: 4px;
+  font-size: 16px;
+  color: var(--info-color);
+  padding: 10px;
+  width: 150px;
+  margin-left: 0%;
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
+  background-color: rgba(255, 0, 0, 0.2);
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: all 0.6s;
+}
+
+.button-main:hover {
+  color: rgb(250, 231, 207);
+  box-shadow: 10px 10px 30px rgba(245, 217, 94, 0.4);
+  border-color: rgb(255, 251, 0);
+}
+
+.anim-button {
+  border-radius: 50%;
+  width: 50px;
+  font-size: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-width: 4px;
+  border-color: var(--secondary-color);
+  background-color: rgba(255, 0, 0, 0.2);
+  color: var(--info-color);
+}
+
+.anim-button:hover {
+  border-color: aliceblue;
 }
